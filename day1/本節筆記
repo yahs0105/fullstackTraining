@@ -1,6 +1,97 @@
 字符格式化輸出
-占位符 %s s = string 字付串
-      %d d = ditgit 整數
-      %f f = float 浮點數,約等于小數
-輸入輸出格式參考網頁
+
+參考網頁
+輸入輸出格式
 https://docs.python.org/zh-cn/3/tutorial/inputoutput.html
+字符串格式化符號含義及轉義字符含意
+http://www.runoob.com/python/python-strings.html
+
+Python轉義字符
+在需要在字符中使用特殊字符時，python用反斜杠(\)轉義字符。如下表：
+轉義字符 描述
+\(在行尾時) 續行符
+\\ 反斜杠符號
+\' 單引號
+\" 雙引號
+\a 響鈴
+\b 退格(Backspace)
+\e 轉義
+\000 空
+\n 換行
+\v 縱向製表符
+\t 橫向製表符
+\r 回車
+\f 換頁
+\oyy 八進制數，yy代表的字符，例如：\o12代表換行
+\xyy 十六進制數，yy代表的字符，例如：\x0a代表換行
+\other 其它的字符以普通格式輸出
+
+python字符串格式化符号:
+
+    符   号	描述
+      %c	 格式化字符及其ASCII码
+      %s	 格式化字符串
+      %d	 格式化整数
+      %u	 格式化无符号整型
+      %o	 格式化无符号八进制数
+      %x	 格式化无符号十六进制数
+      %X	 格式化无符号十六进制数（大写）
+      %f	 格式化浮点数字，可指定小数点后的精度
+      %e	 用科学计数法格式化浮点数
+      %E	 作用同%e，用科学计数法格式化浮点数
+      %g	 %f和%e的简写
+      %G	 %f 和 %E 的简写
+      %p	 用十六进制数格式化变量的地址
+
+
+
+01. %-formatting
+    占位符
+    %s s = string 字付串
+    %d d = ditgit 整數
+    %f f = float 浮點數,約等于小數
+    實例
+>>> 'We have %d apple, %d banana' % (10, 20)
+'We have 10 apple, 20 banana'
+>>> 'Hello, %s' % ('Denny')
+'Hello Denny'
+
+
+02. str.format
+    花括號和其中的字符（稱為格式字段）將替換為傳遞給 str.format()
+    方法的對象。花括號中的數字可用來表示傳遞給 str.format() 方法的對象的位置。
+
+    實例
+>>>print('We are the {} who say "{}!"'.format('knights', 'Ni'))
+We are the knights who say "Ni!"
+
+
+03. f-string
+#在引號外加f帶入參數{}裡的變數
+實例
+print(f'''
+--------- info of {name} ---------
+Name   :{name}
+Age    :{age}
+Job    :{job}
+Salary :{salary}
+You are retired in {65-age} years.
+--------- end ---------
+''')
+
+
+數據運算
+    數據類型出初識
+        數字
+            整數  int(integer)
+                整型
+                長整型
+                in py3 己不區分整型和長整型,統一都叫整型
+                in c int age 22 , long age
+        布爾值 只有2種狀態分別是
+        真 True
+        假 False
+        
+        字符串
+
+
