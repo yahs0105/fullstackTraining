@@ -15,4 +15,4 @@ for i in range(10):
             exit_flag = True#
             break
     if exit_flag:
-        bresk
+        break
