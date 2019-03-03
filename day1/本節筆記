@@ -103,7 +103,61 @@ You are retired in {65-age} years.
     coutinue 結束本次循環,繼續下一次循環
     break 跳出整個當前(當層)的循環
 for
-else...
-
 while
-else...
+coutinue, break
+
+數據類型
+    整數
+    字符串
+    列表, 元組
+        查
+            索引(下標),都是從0開始
+            切片
+            .count 查某個元素的出現次數
+            .index 根據內容找其對應的位置
+            '參數' in 列表,例print('yung' in a)
+
+        增加
+            .append() 追加
+            .insert(index,'內容')
+            .extend 擴展
+
+        修改
+            a[index] = '新的值'
+            a[start:end] = [a,b,c...]
+
+        刪除
+            .romove('內容')
+            .pop(index)
+            del a,del a[index]
+            .clear() 清空
+        排序
+            sort()
+            reverse()
+        身份判斷
+            >>>type(a) is list
+            True
+            >>>
+
+    購物車程序
+        salary = 5000
+
+        1.iphone 6s 5800
+        2.mac book 9000
+        3.coffee 32
+        4.python book 80
+        5.bicyle  1500
+        >>>:1
+        余額不足, -3000
+        >>>:5
+        己加入bicyle 到你的購物車,當前余額:3500
+        >>>:quit
+        您己購買以下商品
+        bicyle 1500
+        coffee 30
+
+        您的余額為:2970
+        歡迎下次光臨
+
+    字典
+    三級菜單
