@@ -88,10 +88,22 @@ You are retired in {65-age} years.
                 長整型
                 in py3 己不區分整型和長整型,統一都叫整型
                 in c int age 22 , long age
+
         布爾值 只有2種狀態分別是
-        真 True
-        假 False
-        
+            真 True 條件成立
+            假 False 條件不成立
+
         字符串
+            計算機中,一切皆為對象
+            世界萬物,皆為對象,一切對象皆可分類
 
+循環loop
+    有限循環(次數限制)
+    無限循環=死循環
+    coutinue 結束本次循環,繼續下一次循環
+    break 跳出整個當前(當層)的循環
+for
+else...
 
+while
+else...
