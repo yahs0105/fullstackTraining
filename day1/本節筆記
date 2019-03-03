@@ -1,0 +1,6 @@
+字符格式化輸出
+占位符 %s s = string 字付串
+      %d d = ditgit 整數
+      %f f = float 浮點數,約等于小數
+輸入輸出格式參考網頁
+https://docs.python.org/zh-cn/3/tutorial/inputoutput.html
