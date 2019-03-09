@@ -4,3 +4,8 @@
 # @FileName:購物車程序.py
 # @Ide     :PyCharm
 
+1.iphone 6s 5800
+2.mac book 9000
+3.coffee 32
+4.python book 80
+5.bicyle  1500
