@@ -104,7 +104,7 @@ You are retired in {65-age} years.
     break 跳出整個當前(當層)的循環
 for
 while
-coutinue, break
+continue, break
 
 數據類型
     整數
@@ -159,5 +159,3 @@ coutinue, break
         您的余額為:2970
         歡迎下次光臨
 
-    字典
-    三級菜單

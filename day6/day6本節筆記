@@ -1,1 +1,139 @@
+字典:
+
+不可變類型:整型(int),字符串(str),元組(tuple)
+
+可變類型:列表(list),字典(dic)
+
+字典分為 鍵 與 值
+鍵 只可用不可變類型,值 皆可用
+
+字典2大特點:無序,鍵唯一
+
+增修改查
+    增加:
+    1 dic['name'] = 'Jerry'
+    #建立一組 鍵 = 值就可新增進 字典
+
+    2 dic.setdefault
+    #鍵存在,不改動返回字典中相應的鍵對應值
+    #鍵不存在,字典中增加新的鍵值對,並返回相應的值
+
+
+    查詢:
+    1 可通過鍵去查詢
+    2 通過dic.keys()查到字典中的所有鍵,type為<class'dict_keys'>可被轉換為list,tuple
+    3 通過dic.values()查到字典中的所有值
+    4 通過dic.items()查到字典中的所有鍵和值
+
+
+    修改:
+    1 dic['name'] = 'Jerry'
+    2 dic1.update(dic2)與list.extend()的用法相似，但會將dic1裡沒有的鍵值加入,並會將其相同的鍵更新它的值
+
+
+    刪除:
+
+    1 dic.clear()清空字典
+    2 dic1.pop()清掉某個鍵值,但有返回鍵值
+    3 dic3.popitem()隨機刪除某個鍵值
+    4 del dic[]刪除字典中指定鍵值
+    5 del dic刪除整個字典
+
+
+    其他操作以及涉及到的方法:
+    1 新增字典 dict.fromkeys()基本上適用淺層的copy
+    2 排序 sorted(dic)
+    3 遍歷
+
+
+字符串 補充:
+#String 操作
+
+# a="Let's go "
+# print(a)
+# 1   * 重复输出字符串
+# print('hello'*20)
+
+# 2 [] ,[:] 通过索引获取字符串中字符,这里和列表的切片操作是相同的,具体内容见列表
+# print('helloworld'[2:])
+
+#关键字 in
+# print(123 in [23,45,123])
+# print('e2l' in 'hello')
+
+# 4 %   格式字符串
+# print('alex is a good teacher')
+# print('%s is a good teacher'%'alex')
+
+#5
+# a='123'
+# b='abc'
+# d='44'
+# # # c=a+b
+# # # print(c)
+# #
+# c= ''.join([a,b,d])
+# print(c)
+
+
+
+# String的内置方法
+
+# st='hello kitty {name} is {age}'
+#
+# print(st.count('l'))       #  统计元素个数
+# print(st.capitalize())     #  首字母大写
+# print(st.center(50,'#'))   #  居中
+# print(st.endswith('tty3')) #  判断是否以某个内容结尾
+# print(st.startswith('he')) #  判断是否以某个内容开头
+# print(st.expandtabs(tabsize=20))
+# print(st.find('t'))        #  查找到第一个元素，并将索引值返回
+# print(st.format(name='alex',age=37))  # 格式化输出的另一种方式   待定：?:{}
+# print(st.format_map({'name':'alex','age':22}))
+# print(st.index('t'))
+# print('asd'.isalnum())
+# print('12632178'.isdecimal())
+# print('1269999.uuuu'.isnumeric())
+# print('abc'.isidentifier())
+# print('Abc'.islower())
+# print('ABC'.isupper())
+# print('  e'.isspace())
+# print('My title'.istitle())
+# print('My tLtle'.lower())
+# print('My tLtle'.upper())
+# print('My tLtle'.swapcase())
+# print('My tLtle'.ljust(50,'*'))
+# print('My tLtle'.rjust(50,'*'))
+# print('\tMy tLtle\n'.strip())
+# print('\tMy tLtle\n'.lstrip())
+# print('\tMy tLtle\n'.rstrip())
+# print('ok')
+# print('My title title'.replace('itle','lesson',1))
+# print('My title title'.rfind('t'))
+# print('My title title'.split('i',1))
+# print('My title title'.title())
+
+
+#摘一些重要的字符串方法
+#1 print(st.count('l'))
+# print(st.center(50,'#'))   #  居中
+# print(st.startswith('he')) #  判断是否以某个内容开头
+# print(st.find('t'))
+# print(st.format(name='alex',age=37))  # 格式化输出的另一种方式   待定：?:{}
+# print('My tLtle'.lower())
+# print('My tLtle'.upper())
+# print('\tMy tLtle\n'.strip())
+# print('My title title'.replace('itle','lesson',1))
+# print('My title title'.split('i',1))
+
+
+
+三級菜單
+1.打印省市縣三級菜單
+2.可返回上一級
+3.可隨時退出程序(用break)
+
+
+
+
 
