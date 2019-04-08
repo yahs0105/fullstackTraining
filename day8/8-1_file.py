@@ -89,3 +89,10 @@
 #     print('*',end='',flush=True)  #使用print裡的flush的參數
 #     time.sleep(0.1)
 
+# # 如要將字典,列表,元組存入文件中需先將其轉換成str,取出後用eval轉回原狀態
+# a = str({'abc':{'123':111}})
+# print(type(a))
+# print(a)
+# a = eval(a) #轉回字典型態
+# print(typr(a))
+# print(a['abc'])

@@ -7,7 +7,7 @@
     1.打開文件,得到文件句柄並賦值給一個變量
     2.通過句柄對文件進行操作
     3.關閉文件
-    常用的三種模式'r','w','a'
+    常用的三種模式'r','w','a','r+','w+','a+'
 
 'r'開放閱讀（默認）
 'w'打開寫入，先截斷文件
@@ -17,3 +17,117 @@
 't'文字模式（默認）
 '+'打開磁盤文件進行更新（讀寫）
 'U'通用換行模式（已棄用）
+
+def read(self, size=-1): # known case of _io.FileIO.read
+        """
+        注意，不一定能全读回来
+        讀取最多大小字節，以字節形式返回。
+
+         只進行一次系統調用，因此返回的數據少於請求的數據。
+         在非阻塞模式下，如果沒有可用數據，則返回None。
+         在EOF返回一個空字節對象。
+        “”“
+         返回“”
+
+def readline(self, *args, **kwargs):
+        pass
+
+def readlines(self, *args, **kwargs):
+        pass
+
+
+def tell(self, *args, **kwargs): # real signature unknown
+        “”“
+         當前文件位置。
+
+         可以為不可搜索的文件引發OSError。
+        “”“
+         通過
+“”“
+
+def seek(self, *args, **kwargs): # real signature unknown
+        """
+        移動到新文件位置並返回文件位置。
+
+         參數偏移量是字節數。 可選參數whence默認為
+         SEEK_SET或0（從文件開始偏移，偏移量應> = 0）; 其他價值觀
+         是SEEK_CUR還是1（相對於當前位置，正面或負面移動），
+         和SEEK_END或2（相對於文件末尾移動，通常是負數，但是
+         許多平台允許搜索超出文件的末尾）。
+
+         請注意，並非所有文件對像都是可搜索的。
+        “”“
+        pass
+
+def write(self, *args, **kwargs): # real signature unknown
+        “”“
+         將字節b寫入文件，返回寫入的數字。
+
+         只進行一次系統調用，因此不能寫入所有數據。
+         返回實際寫入的字節數。 在非阻塞模式下，
+         如果寫入將阻止，則返回None。
+        “”“
+        pass
+
+def flush(self, *args, **kwargs):
+        pass
+
+
+def truncate(self, *args, **kwargs): # real signature unknown
+        “”“
+         將文件截斷為最多大小字節並返回截斷的大小。
+
+         大小默認為當前文件位置，由tell（）返回。
+         當前文件位置更改為size的值。
+        “”“
+        pass
+
+
+def close(self): # real signature unknown; restored from __doc__
+            “”“
+             關閉文件。
+
+             關閉的文件不能用於進一步的I / O操作。 close（）可能是
+             不止一次調用沒有錯誤。
+            “”“
+            pass
+##############################################################less usefull
+    def fileno(self, *args, **kwargs): # real signature unknown
+            “”“返回基礎文件描述符（整數）。”“”
+            pass
+
+    def isatty(self, *args, **kwargs): # real signature unknown
+        “”“如果文件連接到 終端機設備，則為True。”“
+        pass
+
+    def readable(self, *args, **kwargs): # real signature unknown
+        “”“如果在閱讀模式下打開文件，則為True。”“
+        pass
+
+    def readall(self, *args, **kwargs): # real signature unknown
+        “”“
+         從文件中讀取所有數據，以字節形式返回。
+
+         在非阻塞模式下，返回盡可能多的返回，
+         如果沒有可用數據，則為無。 在EOF返回一個空字節對象。
+        “”“
+        pass
+
+    def seekable(self, *args, **kwargs): # real signature unknown
+        “”“如果文件支持隨機訪問，則為True。”“
+        pass
+
+
+    def writable(self, *args, **kwargs): # real signature unknown
+        “”“如果在寫入模式下打開文件，則為True。”“
+        pass
+
+
+
+作業
+三級菜單(高大上版):
+將菜單存入文件中
+
+1.展示省市縣市(數據存在文件中)
+2.對菜單實現 增 刪 改 查
+
