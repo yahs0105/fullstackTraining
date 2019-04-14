@@ -44,13 +44,14 @@
 # outer()
 
 
-def outer():
-    count = 10
-    def inner():
-        nonlocal count  #ninlocal用於修改enclosing變量用,和global用法相同但作用域不同
-        count = 20
-        print(count)
-    inner()
-    print(count)
+# def outer():
+#     count = 10
+#     def inner():
+#         nonlocal count  #ninlocal用於修改enclosing變量用,和global用法相同但作用域不同
+#         count = 20
+#         print(count)
+#     inner()
+#     print(count)
+
 
 
