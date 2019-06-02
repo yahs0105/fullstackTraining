@@ -10,10 +10,10 @@ import time
 def show_time(f):
     def inner():
         start = time.time()
-        f()
+        res=f()
         end = time.time()
         print(f'spend:{end-start}')
-
+        return res
     return inner
 #裝飾器 用@加上函數名例:@show_time
 @show_time  #foo = show_time(foo)
