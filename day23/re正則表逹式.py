@@ -17,7 +17,7 @@ import re
 #1 findall 返回所有滿足匹配條件的結困,放在列表里
 str = "24523oiwrpokdsnjviqwuenmjeddysdvio[uqwrnmcoigt"
 
-print(re.findall("j...y",str))
+#print(re.findall("j...y",str))
 
 #2 search 函数会在字符串内查找模式匹配,只到找到第一个匹配然后返回一个包含匹配信息的对象,该对象可以通过调用group()方法得到匹配的字符串,如果字符串没有匹配，则返回None。
 
